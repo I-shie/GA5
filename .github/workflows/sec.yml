@@ -5,6 +5,6 @@ jobs:
     runs-on:  ubuntu-latest
     steps:
       -  name: Create Secret
-         run: echo "${{secret.SEC_VAR1}}"
+         run: echo "${{secrets.SEC_VAR1}}"
            
     
