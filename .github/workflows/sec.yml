@@ -1,0 +1,10 @@
+name: SECRETS
+on: [push]
+jobs:
+  job1:
+    runs-on:  ubuntu-latest
+    steps:
+      -  name: Create Secret
+         run: echo "{{secret.SEC_VAR1}}"
+           
+    
